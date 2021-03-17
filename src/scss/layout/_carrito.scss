@@ -1,0 +1,80 @@
+
+#carrito:hover{
+    .submenu{
+        visibility: visible;
+    }
+}
+
+.submenu{
+    position: relative;
+    visibility: hidden;
+
+
+    #lista-carrito{
+        position: absolute;
+        z-index: 2;
+        background-color: $claro;
+        border: 0.3rem solid $claro;
+        box-shadow: 0.5rem 0.3rem 0.5rem $secundario;
+        left: -0.1rem;
+        
+    }
+
+    @include tablet(){
+        #lista-carrito{
+            
+            top: 0.1rem;
+            left: -25rem;
+        }
+    }
+
+    .vaciar{
+        background-color: $oscuro_uno;
+    }
+
+    .button{
+        color: $claro;
+    }
+
+}
+
+.carritoElemento{
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@include tablet(){
+    .carritoElemento{
+        font-size: 1.5rem;
+    }
+}
+
+.borrar-producto{
+    color: $oscuro_uno;
+}
+
+@include tablet(){
+    .borrar-producto{
+        border-radius: 25%;
+        padding: 1rem;
+    }
+}
+
+.carritoFooter{
+    background-color: $oscuro_uno;
+    color: $claro;
+    padding: 1rem;
+    margin: 0 auto;
+    
+}
+
+th.carritoHeader {
+    font-size: 1.5rem;
+}
+
+@include tablet{
+    th.carritoHeader {
+        font-size: 2.0rem;
+    }
+}

@@ -1,0 +1,20 @@
+
+@import 'base/normalize';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,300;1,900&display=swap');
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/globales';
+@import 'base/utilidades';
+
+
+//mis demas css
+
+@import 'layout/header';
+@import 'layout/barra';
+@import 'layout/carrito';
+@import 'layout/hero';
+@import 'layout/barra-secundaria';
+@import 'layout/main';
+@import 'layout/expositorio';
+@import 'layout/producto';
+@import 'layout/footer';

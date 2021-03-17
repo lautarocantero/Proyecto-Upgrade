@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upgrade</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1 class="titulo">Upgrade</h1>
+        <div class="barra">
+            <nav class="navegacion">
+                <ul class="navegacion-principal">
+                    <li class="pagina">
+                        <a href="#" class="caja seleccionado">
+                            Productos
+                        </a>
+                    </li>
+                    <li class="pagina">
+                        <a href="#" class="caja">
+                            Armá tu pc
+                        </a>
+                    </li>
+                    <li class="pagina">
+                        <a href="#" class="caja">
+                            Encontra tu equipo
+                        </a>
+                    </li>
+                    <li class="pagina">
+                        <a href="#" class="caja">
+                            Mi cuenta
+                        </a>
+                    </li>
+                    <li class="pagina">
+                        <a href="#" class="caja">
+                            Ayuda
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" id="carrito">
+                            <i class="fas fa-shopping-cart carrito"></i>
+                            <ul class="submenu">
+                                <table id="lista-carrito">
+                                    <thead>
+                                        <tr>
+                                            <th class="carritoHeader">Imagen</th>
+                                            <th class="carritoHeader">Nombre</th>
+                                            <th class="carritoHeader">Precio</th>
+                                            <th class="carritoHeader" colspan="2">Cantidad</th>
+                                            <!-- <th class="carritoHeader"></th> -->
+                                        </tr>
+                                    </thead>
+                                    <tbody></tbody>
+                                    <tfoot>
+                                        <tr>
+                                          <td class="carritoElemento carritoFooter vaciar"><a href="#" id="vaciar-carrito" class="button">Vaciar carrito</a></td>
+                                          <td class="carritoElemento carritoFooter" colspan="2">total </td>
+                                          <td class="carritoElemento carritoFooter" id="suma" colspan="2"></td>
+                                        </tr>
+                                      </tfoot>
+                                </table>
+                                
+                            </ul>
+                            
+                        </a>
+                    </li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="hero"></div>
+
+    <div class="barra-secundaria">
+
+        <div class="informacion">
+            <h2 class="subtitulo">Nuestros productos</h2>
+            <div class="buscador">
+                <label for="variedad">Filtrar <i class="fas fa-search"></i>
+                </label>
+                <select name="variedad" id="variedad">
+                    <option value="todo">todo</option>
+                </select>
+            </div>
+        </div>
+
+            <div class="video">
+                <video class="video_buscador" controls autoplay muted loop>
+                    <source src="/src/img/vertical_glowing_final.mp4" type="video/mp4"> 
+                    <source src="/src/img/vertical_glowing_final.ogg" type="video/ogg"> 
+                    <source src="/src/img/vertical_glowing_final.webm" type="video/webm"> 
+                </video>
+            </div>
+
+            
+  
+    </div>
+
+    <main class="main">
+
+        
+
+        <div id="expositorio" class="expositorio"></div>
+
+    </main>
+
+    <footer class="footer">
+        &copy Lautaro Cantero FreeLancer
+    </footer>
+
+    <script src="build/js/bundle.js"></script>
+    <script src="https://kit.fontawesome.com/8206a300c4.js" crossorigin="anonymous"></script>
+</body>
+</html>

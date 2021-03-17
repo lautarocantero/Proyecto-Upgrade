@@ -1,0 +1,33 @@
+
+.header{
+
+    background: rgb(72,12,168);
+    background: linear-gradient(149deg, rgba(72,12,168,1) 0%, rgba(9,9,121,1) 34%, rgba(255,0,104,1) 100%);
+
+    .titulo{
+        color: $terciario;
+        text-align: center;
+        font-size: 6.5rem;
+        font-family: $fuente_titulo;
+        padding: 0 0 1rem 0;
+        text-transform: uppercase;
+
+        animation: aparecer 3s;
+    }
+
+}
+
+@include tablet(){
+    .header{
+        background-color: black;
+    }
+}
+    
+@keyframes aparecer{
+    0%{
+        margin-left: -500rem;
+    }
+    100%{
+        margin-left: 0;
+    }
+}

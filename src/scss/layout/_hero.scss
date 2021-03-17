@@ -1,0 +1,51 @@
+
+.hero{
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center left;
+    height: 15vh;
+
+    animation: recorrerHero 60s infinite;
+
+}
+
+@include tablet(){
+    .hero{
+        background-size:cover;
+        background-position: center center;
+        height: 55vh;
+    }
+}
+
+
+@keyframes recorrerHero{
+
+    0%{
+        background-image: url(/build/img/hero-1.webp);
+    }
+    24%{
+        background-image: url(/build/img/hero-1.webp);
+    }
+    25%{
+        background-image: url(/build/img/hero-2.webp);
+    }
+    50%{
+        background-image: url(/build/img/hero-2.webp);
+    }
+    51%{
+        background-image: url(/build/img/hero-3.webp);
+    }
+    75%{
+        background-image: url(/build/img/hero-3.webp);
+    }
+    76%{
+        background-image: url(/build/img/hero-4.webp);
+    }
+    100%{
+        background-image: url(/build/img/hero-4.webp);
+    }
+    
+
+    
+    
+}

@@ -1,0 +1,21 @@
+
+.expositorio{
+
+    // border: 1px solid black;
+    width: 95%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+
+}
+
+
+@include tablet(){
+    
+    .expositorio{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+
+    }
+}

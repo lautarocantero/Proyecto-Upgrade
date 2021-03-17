@@ -1,0 +1,81 @@
+
+.producto{
+
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    background-color: $oscuro_uno;
+    border: 0.2rem solid $oscuro_uno;
+    margin: 2rem auto;
+    width: 90%;
+
+    // &:hover{
+    //     background: rgb(72,12,168);
+    //     background: linear-gradient(32deg, rgba(72,12,168,1) 0%, rgba(9,9,121,1) 26%, rgba(0,255,29,1) 100%);
+    // }
+
+    
+
+    .producto_informacion{
+        color: $claro;
+        margin: 1rem auto;
+        text-transform: uppercase;
+
+        .producto_nombre{
+            color: $claro;
+            text-align: center;
+        }
+
+        .producto_precio{
+            margin-top: 1rem;
+            text-align: center;
+            color: $terciario;
+        }
+
+    }
+
+    .botonCarrito{
+        border: none;
+        margin: 1rem;
+        background-color: $claro;
+        padding: 1rem;
+        text-align: center;
+        color: $naranja;
+        border-bottom: 0.2rem solid $naranja;
+        // transition: padding 2s ease-in-out 0s;
+        // transition: font-size 1s ease-in-out 0s;
+        transition: color 2s ease-in-out 0s;
+        transition: border-bottom 2s ease-in-out 0s;
+        
+
+        input{
+            color: $naranja;
+            transition: color 2s ease-in-out 0s;
+            
+
+        }
+    
+        .boton{
+            border: none;
+            background-color: transparent;
+        }
+
+        &:hover{
+            // padding: 2rem;
+            // font-size: 2rem;
+            cursor: pointer;
+            color: $primario;
+            border-bottom: 0.2rem solid $primario;
+
+            input{
+                color: $primario;
+            }
+
+        }
+
+        .carrito{
+            user-select: none;
+        }
+
+    }
+
+}

@@ -1,0 +1,89 @@
+
+.barra{
+
+    // border: 1px solid $oscuro_dos;
+
+    @include tablet(){
+        border: 1px solid $oscuro_dos;
+    }
+
+    .navegacion-principal{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+        gap: 1rem;
+        padding: 0.5rem;
+        font-size: 3rem;
+
+        .pagina{
+            border-bottom: 0.1rem solid $claro;
+        }
+        
+        .caja{
+            color: $claro;
+            transition: color 1s ease-in-out 0s;
+            font-family: $fuente_principal;
+            font-size: 2rem;
+            text-transform: uppercase;
+            
+
+            &:hover{
+                color: $cuarto;
+            }
+
+        }
+        .seleccionado{
+            color: $cuarto;
+        }
+
+        .carrito{
+            color: $claro;
+            transition: color 1s ease-in-out 0s;
+
+            &:hover{
+                cursor: pointer;
+                color: $cuarto;
+            }
+        }
+
+    }
+
+    @include tablet(){
+        .navegacion-principal{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            
+
+            .pagina{
+                border: none;
+
+                .caja{
+                    font-size: 1.5rem;
+                    margin-left: 1rem;
+                }
+            }
+
+        }
+    }
+
+    @include desktop(){
+        .navegacion-principal{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5rem;
+
+            .pagina{
+                border: none;
+
+                .caja{
+                    font-size: 2.0rem;
+                }
+            }
+
+        }
+    }
+
+}
